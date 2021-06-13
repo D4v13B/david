@@ -124,7 +124,7 @@ html {
 
       .des {
         font-size: $font-size-1;
-        width: 366px;
+        width: 300px;
       }
     }
 
@@ -422,6 +422,32 @@ html {
   .home .presentacion {
     padding: 3rem 0;
   }
+
+  .skills-container .skills__descripcion {
+    width: 100%;
+
+    .skills__img {
+      width: 100%;
+    }
+  }
+
+  .skills-container .skills__img {
+    width: 100%;
+  } 
+
+  .work__description {
+    padding: 0 0;
+  }
+
+  .work__botones {
+    white-space: none;
+    display: flex;
+    margin: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width:1201px) {
@@ -471,7 +497,6 @@ html {
     z-index: 100;
     transform: translateY(100%);
     opacity: 0;
-    overflow: hidden;
 
     ul {
       display: flex;
@@ -505,12 +530,5 @@ html {
   .show {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-@media screen and (max-width:414px) {
-
-  .nav-links {
-    height: 115vh;
   }
 }
