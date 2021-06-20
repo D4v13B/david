@@ -52,6 +52,13 @@ html {
   padding-top: 80px;
 }
 
+i, a i {
+
+  &:hover {
+    color: $color-cuarto;
+  }
+}
+
 //========================HOME/NAV==========================
 
 .home {
@@ -72,6 +79,7 @@ html {
 
     &__logo {
       color: $color-primario;
+      text-decoration: none;
 
       h1 {
         font-weight: $font-weight-2;
@@ -86,6 +94,11 @@ html {
       a {
         color: $color-primario;
         margin: 0 15px;
+        text-decoration: none;
+
+        &:hover {
+          color: $color-cuarto;
+        }
       }
 
       &-2 {
@@ -176,6 +189,7 @@ html {
         
         p {
           font-size: 0.938rem;
+          margin: auto 0 auto $m-1;
         }
       }
     }
@@ -189,11 +203,12 @@ html {
       justify-content: space-between;
       align-items: center;
       padding: 10px 20px;
-      position: relative; 
+      position: relative;
 
       i {
         display: flex;
         align-items: center;
+        width: 50%;
 
         p {
           font-weight: $font-weight-3;
@@ -285,6 +300,7 @@ html {
       color: $color-primario;
       border-radius: 20px;
       box-shadow: inset 2px 1px 10px 1px $color-terceario;
+      text-decoration: none;
     }
 
     i {
@@ -307,17 +323,18 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    
     input,textarea {
       //box-shadow: inset 2px 1px 10px 1px $color-terceario;
-      box-shadow: 2px 1px 10px 1px $color-terceario;
+      color: $color-primario;
+      font-size: 18px;
       min-width: 300px;
       max-width: 400px;
       width: 100%;
       margin: 20px 0;
       padding: 20px 10px;
+      box-shadow: 2px 1px 10px 1px $color-terceario;
       border-radius: 20px;
-      color: $color-primario;
     }
     
     textarea {
@@ -339,6 +356,10 @@ html {
       border-radius: 20px;
       color: $color-secundario;
       background: $color-primario;
+
+      &:hover {
+        background: $color-cuarto;
+      }
 
       i {
         color: $color-secundario;
@@ -485,8 +506,7 @@ html {
   .nav-links {
     transition: 500ms all ease;
     position: fixed;
-    background: rgba($color-cuarto, .9);
-    backdrop-filter: blur(10px);
+    background: rgba($color-primario, .9);
     left: 0;
     top: 0;
     width: 100%;
