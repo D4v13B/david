@@ -19,12 +19,12 @@
 
       <nav class="nav home__nav container">
         
-        <a href="#" class="nav__logo">
+        <a href="#" class="nav__logo FadeIn">
           <h1>David</h1>
         </a>
         
         <nav class="nav__links nav-links" id="nav-links">
-          <ul class="nav__links-1 link-menu">
+          <ul class="nav__links-1 link-menu SlideDown">
             <a class="white" href="#home">Home</a>
             <a class="white" href="#skills">Skills</a>
             <a class="white" href="#work">Works</a>
@@ -48,7 +48,7 @@
     </div>
       
     <section class="presentacion flex">
-      <div class="presentacion__redes display-none">
+      <div class="presentacion__redes display-none SlideDown">
         <a href="mailto:moncho021509@email.com">
           <i href="#"class="fas fa-envelope"></i>
         </a>
@@ -60,7 +60,7 @@
         </a>
       </div>
 
-      <div class="presentacion__titulos">
+      <div class="presentacion__titulos SlideDown">
         <h2>Hello I´m David</h2>
         <p class="sub">Frontend Developer</p>
         <p class="des">Junior developer & IX Designer.
@@ -68,7 +68,7 @@
           a lot of creativity</p>
       </div>
 
-      <div class="presentacion__foto">
+      <div class="presentacion__foto" id="presentacion">
         <img src="img/e51be073435242ba26330433cc2f3ceb-su-eacute-ter-de-hombre-de-moda-para-hombre-by-vexels.png" alt="" class="foto__david">
 
         <?xml version="1.0" standalone="no"?>
@@ -164,6 +164,23 @@
         <section class="work__botones">
           <a href="https://zmonchox.github.io/horario-v3.1/" class="work__demo">See demo<i class="fas fa-link"></i></a>
           <a href="https://github.com/ZMonchoX/horario-v3.1" class="work__repo">See repo<i class="fas fa-code"></i></a>
+        </section>
+      </div>
+    </div>
+
+    <div class="work__presentation flex ">
+      
+      <div class="work__image">
+        <img src="img/works/Restaurante.png"  class="img-shadow" alt="">
+      </div>
+
+      <div class="work__description">
+        <h3>Restaurante</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione quod excepturi repellendus incidunt quo velit possimus consequuntur nesciunt adipisci. Obcaecati autem quam nulla alias aspernatur. Modi ducimus asperiores quia.</p>
+
+        <section class="work__botones">
+          <a href="https://zmonchox.github.io/Restaurante/" class="work__demo">See demo<i class="fas fa-link"></i></a>
+          <a href="https://github.com/ZMonchoX/Restaurante" class="work__repo">See repo<i class="fas fa-code"></i></a>
         </section>
       </div>
     </div>
@@ -268,4 +285,8 @@
 </body>
 </html>
 
+<script src="js/jquery.min.js"></script>
+
 <script src="js/app.js"></script>
+
+<script src="js/animation.js"></script>

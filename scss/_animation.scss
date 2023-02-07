@@ -1,0 +1,41 @@
+#presentacion {
+  animation: mostrar 1500ms;
+}
+
+.SlideDown {
+  animation: mostrar-desde-arriba 1500ms;
+}
+
+.FadeIn {
+  animation: FadeIn 2000ms;
+}
+
+@keyframes mostrar {
+  from {
+    transform: translateX(1000px);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes mostrar-desde-arriba {
+  from {
+    transform: translateY(-1000px);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
