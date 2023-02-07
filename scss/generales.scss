@@ -254,6 +254,26 @@ i, a i {
   }
 }
 
+// =======================CERTIFICATES===================
+.certificados {
+
+  &__presentation {
+    width: 100%;
+  }
+
+  &__diploma {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img{
+    width: 33%;
+    margin: 15px;
+    border-radius: 20%px;
+  }
+}
+
 //========================WORKS==========================
 .work {
   color: $color-primario;
@@ -455,6 +475,10 @@ i, a i {
   .skills-container .skills__img {
     width: 100%;
   } 
+
+  .certficados__img {
+    width: 100%;
+  }
 
   .work__description {
     padding: 0 0;
