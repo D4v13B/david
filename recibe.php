@@ -1,7 +1,7 @@
 <?php
 
 $errores = "";
-$success = "";
+$success;
 
 if(isset($_POST['submit'])){
    //print_r($_POST);
@@ -50,32 +50,4 @@ if(isset($_POST['submit'])){
    }
 
 }
-
 ?>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-   <h2 class="titulo-de-seccion">Contáctame</h2>
-
-   <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST"  id="form" class="contact__form">
-
-      <input type="text" name="name" placeholder="Name" >
-
-      <input type="email" name="email"  placeholder="Email">
-
-      <textarea name="message" placeholder="Message"></textarea>
-
-      <div class="contact__send">
-         <button type="submit" name="submit">Contactar<i class="fas fa-paper-plane"></i></button>
-      </div>
-
-      <?php
-      if(!empty($errores)){
-         echo '<p class="contact__errors">'.$errores.'</p>';
-      }else if($success){
-         echo '<p class="contact__success">Se ha enviado correctamente</p>';
-      }
-      ?>
-
-
-   </form>

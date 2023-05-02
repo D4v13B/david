@@ -244,9 +244,22 @@
 
   <section class="contact container pd-80" id="contact">
 
-    <?php
-      require_once 'recibe.php';
-    ?>
+    <h2 class="titulo-de-seccion">Contáctame</h2>
+
+    <form action="recibe.php" method="POST"  id="form" class="contact__form">
+
+      <input type="text" name="name" placeholder="Name" >
+
+      <input type="email" name="email"  placeholder="Email">
+
+      <textarea name="message" placeholder="Message"></textarea>
+
+      <div class="contact__send">
+        <button type="submit" name="submit">Contactar<i class="fas fa-paper-plane"></i></button>
+      </div>
+
+    </form>
+
   </section>
 
   <!-- <button class="toggle" id="toggle-button">
