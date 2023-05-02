@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
   <!--CSS-->
-  <link rel="stylesheet" href="css/generales.css">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="home" id="home">
@@ -79,11 +78,6 @@
 
       <div class="presentacion__foto" id="presentacion">
         <img src="img/e51be073435242ba26330433cc2f3ceb-su-eacute-ter-de-hombre-de-moda-para-hombre-by-vexels.png" alt="" class="foto__david">
-
-        <?xml version="1.0" standalone="no"?>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#6B95FF" d="M45.5,-57.2C57.9,-43.9,65.9,-28.5,71.3,-10.7C76.7,7.1,79.3,27.2,71.8,42.4C64.2,57.7,46.3,68,27.5,74.4C8.6,80.8,-11.3,83.2,-27.1,76.6C-42.9,69.9,-54.5,54,-64.2,37.1C-73.8,20.2,-81.5,2.3,-79.3,-14.7C-77.1,-31.6,-65.1,-47.5,-50.3,-60.3C-35.4,-73.1,-17.7,-82.9,-0.6,-82.3C16.6,-81.6,33.2,-70.5,45.5,-57.2Z" transform="translate(100 100)" />
-      </svg>
 
       </div>
 
@@ -249,27 +243,15 @@
   <!--========================CONTACT=============================-->
 
   <section class="contact container pd-80" id="contact">
-    <h2 class="titulo-de-seccion">Contáctame</h2>
-    
-    <form action="https://formsubmit.co/moncho021509@gmail.com" method="POST"  id="form" class="contact__form">
 
-      <input type="text" id="name" placeholder="Name" >
-
-      <input type="email"id="email" placeholder="Email">
-
-      <textarea name="mensaje" id="mensaje" placeholder="Message"></textarea>
-
-      <div class="contact__send">
-        <button type="submit">Contactar<i class="fas fa-paper-plane"></i></button>
-      </div>
-
-    </form>
-
+    <?php
+      require_once 'recibe.php';
+    ?>
   </section>
 
-  <button class="toggle" id="toggle-button">
+  <!-- <button class="toggle" id="toggle-button">
     <i class="fas fa-hamburger"></i>
-  </button>
+  </button> -->
   
   <!--====================FOOTER==================================-->
 
