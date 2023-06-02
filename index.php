@@ -204,67 +204,15 @@
       </div>
     </div>
 
-    <!-- <div class="work__presentation flex">
-      <div class="work__image">
-        <img src="img/works/trading-joven.png"  class="img-shadow" alt="">
-      </div>
-
-      <div class="work__description flex">
-        <h3>Blog de trading</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione quod excepturi repellendus incidunt quo velit possimus consequuntur nesciunt adipisci. Obcaecati autem quam nulla alias aspernatur. Modi ducimus asperiores quia.</p>
-
-        <section class="work__botones ">
-          <a href="https://zmonchox.github.io/trading_joven/" class="work__demo">See demo<i class="fas fa-link"></i></a>
-          <a href="https://github.com/ZMonchoX/trading_joven" class="work__repo">See repo<i class="fas fa-code"></i></a>
-        </section>
-      </div>
-    </div>
-
-    <div class="work__presentation flex">
-      
-      <div class="work__image">
-        <img src="img/works/sermontreal-web.png"  class="img-shadow" alt="">
-      </div>
-
-      <div class="work__description">
-        <h3>Sermontreal</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione quod excepturi repellendus incidunt quo velit possimus consequuntur nesciunt adipisci. Obcaecati autem quam nulla alias aspernatur. Modi ducimus asperiores quia.</p>
-
-        <section class="work__botones">
-          <a href="https://zmonchox.github.io/sermontreal-web/" class="work__demo">See demo<i class="fas fa-link"></i></a>
-          <a href="https://github.com/ZMonchoX/sermontreal-web" class="work__repo">See repo<i class="fas fa-code"></i></a>
-        </section>
-      </div> -->
-
-    </div>
-
   </section>
 
   <!--========================CONTACT=============================-->
 
-  <section class="contact container pd-80" id="contact">
-
-    <h2 class="titulo-de-seccion">Contáctame</h2>
-
-    <form action="recibe.php" method="POST"  id="form" class="contact__form">
-
-      <input type="text" name="name" placeholder="Name" >
-
-      <input type="email" name="email"  placeholder="Email">
-
-      <textarea name="message" placeholder="Message"></textarea>
-
-      <div class="contact__send">
-        <button type="submit" name="submit">Contactar<i class="fas fa-paper-plane"></i></button>
-      </div>
-
-    </form>
-
-  </section>
-
-  <!-- <button class="toggle" id="toggle-button">
-    <i class="fas fa-hamburger"></i>
-  </button> -->
+  <?php
+  
+    require('recibe.php');
+  
+  ?>
   
   <!--====================FOOTER==================================-->
 
@@ -286,7 +234,7 @@
 
       <div class="footer__redes">
         <a href="mailto:moncho021509@email.com">
-          <i href="#"class="fas fa-envelope"></i>
+          <i class="fas fa-envelope"></i>
         </a>
         <a href="https://wa.link/6qvk70">
           <i class="fab fa-whatsapp"></i>
@@ -305,10 +253,9 @@
     </div>
   </footer>
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 </html>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/animation.js"></script>

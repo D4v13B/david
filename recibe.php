@@ -1,20 +1,36 @@
+<section class="contact container pd-80" id="contact">
+   <h2 class="titulo-de-seccion">Contáctame</h2>
+   <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST"  id="form" class="contact__form">
+      <input type="text" name="name" placeholder="Name" >
+      <input type="email" name="email"  placeholder="Email">
+      <textarea name="message" placeholder="Message"></textarea>
+      <div class="contact__send">
+      <button type="submit" name="submit">Contactar<i class="fas fa-paper-plane"></i></button>
+      </div>
+   </form>
+</section>
+
+<button class="toggle" id="toggle-button">
+   <i class="fas fa-hamburger"></i>
+</button>
+
 <?php
 
 $errores = "";
-$success;
+$success = false;
 
 if(isset($_POST['submit'])){
    //print_r($_POST);
 
-   $nombre = $_POST['name'];
+   $name = $_POST['name'];
    $email = $_POST['email'];
    $message = $_POST['message'];
 
    //Validamos y filtramos el nombre
-   if(!empty($nombre)){
-      $nombre = trim($nombre);
-      $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
-      $nombre = stripslashes($nombre);
+   if(!empty($name)){
+      $name = trim($name);
+      $name = filter_var($name, FILTER_SANITIZE_STRING);
+      $name = stripslashes($name);
    }else{
       $errores .= "Inserte su nombre por favor <br>";
    }
