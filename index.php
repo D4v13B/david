@@ -1,3 +1,8 @@
+<?php
+  $enviado;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -207,12 +212,41 @@
   </section>
 
   <!--========================CONTACT=============================-->
+  <section>
+    <h2 class="titulo-de-seccion">Contacto</h2>
 
-  <?php
-  
-    require('recibe.php');
-  
-  ?>
+    <?php $enviado = false;?>
+
+    <form action="recibe.php" method="post" class="contact__form">
+      
+      <input type="text" name="nombre" placeholder="Nombre" value="<?php
+        if(!$enviado && isset($name))
+          echo $name;
+      ?>">
+      
+      <input type="email" name="email" placeholder="Email" value="<?php
+        if(!$enviado && isset($email))
+          echo $email;
+      ?>">
+
+      <textarea name="message" placeholder="Message"><?php
+        if(!$enviado && isset($message))
+          echo $message
+      ?></textarea>
+
+      <input type="submit" value="Contactar" name="submit">
+
+      <div class="contact__send">
+        <?php
+            if(!empty($errores)){
+              echo '<p class="contact__errors">'.$errores.'</p>';
+            }else if($enviado){
+              echo '<p class="contact__success">'."Se ha enviado correctamente".'</p>';
+            }
+        ?>
+      </div>
+    </form>
+  </section>
   
   <!--====================FOOTER==================================-->
 
