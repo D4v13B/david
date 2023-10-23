@@ -461,7 +461,7 @@ i, a i {
       margin: 0 10px;
 
       i {
-        font-size: $font-size-3;
+        font-size: $font-size-2;
       }
     }
   }
@@ -473,8 +473,10 @@ i, a i {
 @media screen and (max-width:1200px) {
 
   .flex {
-    flex-direction: column;
+    display: flex;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .presentacion {
@@ -490,6 +492,18 @@ i, a i {
 
   .home .presentacion {
     padding: 3rem 0;
+  }
+
+  .skills {
+
+    &__tecnologia{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__bar{
+      width: 100%;
+    }
   }
 
   .skills-container .skills__descripcion {
@@ -508,18 +522,28 @@ i, a i {
     width: 100%;
   }
 
-  .work__description {
-    padding: 0 0;
-  }
-
-  .work__botones {
-    white-space: none;
-    display: flex;
-    margin: 30px;
-    height: 100px;
-    display: flex;
+  .work{
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+
+    &__image{
+      padding: 0 0 0 0;
+    }
+
+    &__description {
+      padding: 0 0;
+      width: 100%;
+    }
+    
+    &__botones {
+      white-space: none;
+      display: flex;
+      margin: 30px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
 
